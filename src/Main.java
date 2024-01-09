@@ -25,11 +25,16 @@ public class Main {
 fullName
 Pезультат программы выведите в консоль в формате: «Данные Ф. И. О. сотрудника для заполнения отчета — …».
          */
-
+        System.out.println("Задача №1");
+        System.out.println();
         String firstName = "Ivan";
         String middleName = "Ivanovich";
         String lastName = "Ivanov";
         String fullName = lastName + " " + firstName + " " + middleName;
         System.out.println(fullName);
+        System.out.println("Задача № 2");
+        System.out.println();
+        System.out.println(fullName.toUpperCase());
+
     }
 }
