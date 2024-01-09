@@ -23,18 +23,26 @@ public class Main {
 сотрудника с Ivanov Ivan Ivanovich на полностью заглавные буквы.
 В качестве строки с исходными данными используйте строку
 fullName
-Pезультат программы выведите в консоль в формате: «Данные Ф. И. О. сотрудника для заполнения отчета — …».
+Pезультат программы выведите в консоль в формате:
+ «Данные Ф. И. О. сотрудника для заполнения отчета — …».
+ Задача 3
+Система, в которой мы работаем, не принимает символ «ё».
+Напишите программу, которая заменяет символ «ё» на символ «е».
+В качестве исходных данных используйте строку fullName
+и данные в ней — «Иванов Семён Семёнович».
+Выведите результат программы в консоль в формате: «Данные Ф. И. О. сотрудника — ...».
          */
         System.out.println("Задача №1");
-        System.out.println();
         String firstName = "Ivan";
         String middleName = "Ivanovich";
         String lastName = "Ivanov";
         String fullName = lastName + " " + firstName + " " + middleName;
         System.out.println(fullName);
         System.out.println("Задача № 2");
-        System.out.println();
         System.out.println(fullName.toUpperCase());
-
+        System.out.println("Задача № 3");
+        fullName = "Иванов Семён Семёнович";
+        fullName = fullName.replace("ё", "е");
+        System.out.println(fullName);
     }
 }
